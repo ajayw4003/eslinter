@@ -48,7 +48,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,css,html,md}": "prettier --write",
-    "src/**/*.{js,jsx,css,html}": "eslint"
+    "src/**/*.{js,jsx,css,html}": "eslint",
+    "*.js": ["eslint --fix", "git add"],
+    "*.jsx": ["eslint --fix", "git add"]
   },
   "husky": {
     "hooks": {
