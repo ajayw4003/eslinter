@@ -40,6 +40,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.1",
@@ -48,13 +49,6 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,css,html,md}": "prettier --write",
-    "src/**/*.{js,jsx,css,html}": "eslint",
-    "*.js": ["eslint --fix", "git add"],
-    "*.jsx": ["eslint --fix", "git add"]
-  },
-  "husky": {
-    "hooks": {
-        "pre-commit": "npx lint-staged"
-    }
-}
+    "src/**/*.{js,jsx,css,html}": "eslint"
+  }
 }
