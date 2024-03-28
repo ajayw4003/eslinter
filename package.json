@@ -48,7 +48,7 @@
     "husky": "^9.0.11"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,css,html,md}": "prettier --write",
+    "src/**/*.{jsx,js,css,html,md}": "prettier --write",
     "src/**/*.{js,jsx,css,html}": "eslint"
   }
 }
